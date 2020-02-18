@@ -1,13 +1,13 @@
 # Laravel Categories
 
-[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/kodekeep/laravel-categories/run-tests?label=tests)](https://github.com/kodekeep/laravel-categories/actions?query=workflow%3Arun-tests+branch%3Amaster)
-[![Code Coverage](https://badgen.now.sh/codecov/c/github/kodekeep/laravel-categories)](https://codecov.io/gh/kodekeep/laravel-categories)
-[![Minimum PHP Version](https://badgen.net/packagist/php/kodekeep/laravel-categories)](https://packagist.org/packages/kodekeep/laravel-categories)
 [![Latest Version](https://badgen.net/packagist/v/kodekeep/laravel-categories)](https://packagist.org/packages/kodekeep/laravel-categories)
+[![Software License](https://badgen.net/packagist/license/kodekeep/laravel-categories)](https://packagist.org/packages/kodekeep/laravel-categories)
+[![Build Status](https://img.shields.io/github/workflow/status/kodekeep/laravel-categories/run-tests?label=tests)](https://github.com/kodekeep/laravel-categories/actions?query=workflow%3Arun-tests+branch%3Amaster)
+[![Coverage Status](https://badgen.net/codeclimate/coverage/kodekeep/laravel-categories)](https://codeclimate.com/github/kodekeep/laravel-categories)
+[![Quality Score](https://badgen.net/codeclimate/maintainability/kodekeep/laravel-categories)](https://codeclimate.com/github/kodekeep/laravel-categories)
 [![Total Downloads](https://badgen.net/packagist/dt/kodekeep/laravel-categories)](https://packagist.org/packages/kodekeep/laravel-categories)
-[![License](https://badgen.net/packagist/license/kodekeep/laravel-categories)](https://packagist.org/packages/kodekeep/laravel-categories)
 
-> Categories for Eloquent Models.
+This package was created by, and is maintained by [Brian Faust](https://github.com/faustbrian), and provides categories for Laravel Eloquent Models.
 
 ## Installation
 
@@ -99,6 +99,10 @@ If you discover a security vulnerability within this package, please send an e-m
 
 This project exists thanks to all the people who [contribute](../../contributors).
 
+## Support Us
+
+We invest a lot of resources into creating and maintaining our packages. You can support us and the development through [GitHub Sponsors](https://github.com/sponsors/faustbrian).
+
 ## License
 
-Mozilla Public License Version 2.0 (MPL-2.0). Please see [License File](LICENSE.md) for more information.
+Laravel Categories is an open-sourced software licensed under the [MPL-2.0](LICENSE.md).
