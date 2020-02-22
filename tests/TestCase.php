@@ -13,7 +13,7 @@ declare(strict_types=1);
 
 namespace KodeKeep\Categories\Tests;
 
-use KodeKeep\Categories\CategoriesServiceProvider;
+use KodeKeep\Categories\Providers\CategoriesServiceProvider;
 use Orchestra\Testbench\TestCase as OrchestraTestCase;
 
 abstract class TestCase extends OrchestraTestCase

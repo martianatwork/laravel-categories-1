@@ -13,6 +13,7 @@ declare(strict_types=1);
 
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Schema;
 use Kalnoy\Nestedset\NestedSet;
 
@@ -20,7 +21,7 @@ class CreateCategoriesTables extends Migration
 {
     public function up()
     {
-        Schema::create('categories', function (Blueprint $table) {
+        Schema::create(Config::get('categories.tables.categories'), function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
             $table->string('slug');
@@ -29,7 +30,7 @@ class CreateCategoriesTables extends Migration
             $table->timestamps();
         });
 
-        Schema::create('model_has_categories', function (Blueprint $table) {
+        Schema::create(Config::get('categories.tables.model_has_categories'), function (Blueprint $table) {
             $table->integer('category_id');
             $table->morphs('model');
         });
@@ -37,7 +38,7 @@ class CreateCategoriesTables extends Migration
 
     public function down()
     {
-        Schema::dropIfExists('categories');
-        Schema::dropIfExists('model_has_categories');
+        Schema::dropIfExists(Config::get('categories.tables.model_has_categories'));
+        Schema::dropIfExists(Config::get('categories.tables.categories'));
     }
 }

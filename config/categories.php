@@ -15,12 +15,18 @@ use KodeKeep\Categories\Models\Category;
 
 return [
 
-    /*
-    |--------------------------------------------------------------------------
-    | Category Model
-    |--------------------------------------------------------------------------
-    */
+    'models' => [
 
-    'model' => Category::class,
+        'category' => Category::class,
+
+    ],
+
+    'tables' => [
+
+        'categories' => 'categories',
+
+        'model_has_categories' => 'model_has_categories',
+
+    ],
 
 ];

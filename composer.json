@@ -49,7 +49,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "KodeKeep\\Categories\\CategoriesServiceProvider"
+                "KodeKeep\\Categories\\Providers\\CategoriesServiceProvider"
             ]
         }
     },

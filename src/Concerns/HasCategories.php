@@ -14,6 +14,7 @@ declare(strict_types=1);
 namespace KodeKeep\Categories\Concerns;
 
 use Illuminate\Database\Eloquent\Relations\MorphToMany;
+use Illuminate\Support\Facades\Config;
 use KodeKeep\Categories\Models\Category;
 
 trait HasCategories
@@ -21,7 +22,7 @@ trait HasCategories
     public function categories(): MorphToMany
     {
         return $this->morphToMany(
-            config('categories.model'),
+            Config::get('categories.models.category'),
             'model',
             'model_has_categories'
         );
@@ -106,11 +107,11 @@ trait HasCategories
     protected function getStoredCategory($category): Category
     {
         if (is_numeric($category)) {
-            return app(Category::class)->findById($category);
+            return Category::findById($category);
         }
 
         if (is_string($category)) {
-            return app(Category::class)->findByName($category);
+            return Category::findByName($category);
         }
 
         return $category;
